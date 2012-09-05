@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+
+   <extension
+         id="application"
+         point="org.eclipse.core.runtime.applications">
+      <application>
+         <run
+               class="it.matiuz.menumaker.ui.Application">
+         </run>
+      </application>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            name="Menu Maker Perspective"
+            class="it.matiuz.menumaker.ui.Perspective"
+            id="it.matiuz.menumaker.ui.perspective">
+      </perspective>
+   </extension>
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            class="it.matiuz.menumaker.ui.views.CategoryView"
+            id="it.matiuz.menumaker.ui.views.CategoryView"
+            name="Category List">
+      </view>
+      <view
+            class="it.matiuz.menumaker.ui.views.ItemView"
+            id="it.matiuz.menumaker.ui.views.ItemView"
+            name="Item List">
+      </view>
+      <view
+            allowMultiple="true"
+            class="it.matiuz.menumaker.ui.views.MenuItemView"
+            id="it.matiuz.menumaker.ui.views.MenuItemView"
+            name="Menu Item View">
+      </view>
+      <view
+            class="it.matiuz.menumaker.ui.views.MenuView"
+            id="it.matiuz.menumaker.ui.views.MenuView"
+            name="Menu View">
+      </view>
+   </extension>
+   <extension
+         id="product"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="it.matiuz.menumaker.ui.application"
+            name="Menu Maker">
+         <property
+               name="aboutText"
+               value="RCP Mail template created by PDE">
+         </property>
+         <property
+               name="windowImages"
+               value="icons/sample2.gif">
+         </property>
+         <property
+               name="aboutImage"
+               value="product_lg.gif">
+         </property>
+         <property
+               name="appName"
+               value="Menu Maker">
+         </property>
+      </product>
+   </extension>
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            id="it.matiuz.menumaker.ui.actions.set_font_action"
+            name="Set font">
+      </command>
+      <command
+            id="it.matiuz.menumaker.ui.actions.set_images_action"
+            name="Set images">
+      </command>
+      <command
+            id="it.matiuz.menumaker.ui.actions.set_page_action"
+            name="Set page">
+      </command>
+      <command
+            id="it.matiuz.menumaker.ui.actions.print_action"
+            name="Print">
+      </command>
+      <command
+            id="it.matiuz.menumaker.ui.actions.connect_action"
+            name="Connect">
+      </command>
+      <command
+            id="it.matiuz.menumaker.ui.actions.disconnect_action"
+            name="Disconnect">
+      </command>
+   </extension>
+
+</plugin>

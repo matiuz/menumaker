@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: MenuMaker Plug-in
+Bundle-SymbolicName: it.matiuz.menumaker.ui;singleton:=true
+Bundle-Version: 1.0.0
+Bundle-Activator: it.matiuz.menumaker.ui.MenumakerPluginUI
+Bundle-Vendor: MattiaScaricabarozzi
+Require-Bundle: org.eclipse.core.runtime,
+ org.tango.icons,
+ it.matiuz.menumaker.model,
+ org.eclipse.emf.edit.ui,
+ org.postgresql.jdbc,
+ org.eclipse.emf
+Bundle-ActivationPolicy: lazy
+Export-Package: it.matiuz.menumaker.ui,
+ it.matiuz.menumaker.ui.dialogs,
+ it.matiuz.menumaker.ui.tools,
+ it.matiuz.menumaker.ui.views
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
