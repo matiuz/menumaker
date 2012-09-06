@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Tango Icons Plug-in
+Bundle-SymbolicName: org.tango.icons;singleton:=true
+Bundle-Version: 0.8.1
+Bundle-Activator: org.tango.icons.TangoIconsPlugin
+Bundle-Vendor: Colby
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime
+Bundle-ActivationPolicy: lazy
+Export-Package: org.tango.icons
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
