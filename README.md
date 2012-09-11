@@ -9,11 +9,14 @@ Then, user can print the desired menu selecting style (fonts, colors etc...) and
 The main features are:
 
 1) User interface written in Java and designed with SWT Windows Builder.
+
 2) Postgres database interface via JDBC driver.
+
 3) Data modelling with EMF plugin.
 
 TODO
 
 1) Add more database supports (SQlite...).
+
 2) Increase user functionality.
 
